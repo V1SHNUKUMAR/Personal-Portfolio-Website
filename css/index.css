@@ -7,6 +7,9 @@
 /* body{
     overflow-x: hidden;
 } */
+*{
+    font-family: 'Open Sans', sans-serif;
+}
 .main{
     /* background-color: #e7eaee ; */
     min-height: 100vh;
@@ -377,24 +380,26 @@ hr{
     /* margin: .5em 0; */
     /* line-height: 1; */
     font-size: 2.5em;
-    font-weight: 500;
+    font-weight: 600;
     transition-delay: 200ms;
 
 }
 .aboutSection .basicInfo .about-role{
-    font-size: 2em;
+    font-size: 1.8em;
+    margin: .5em;
     line-height: 1;
     color: grey;
     transition-delay: 200ms;
 }
 .aboutSection .basicInfo i{
-    color: red;
+    color: tomato;
 }
 .aboutSection .basicInfo .about-location h5{
     margin: .5em;
     font-weight: normal;
-    font-size: 1.8em;
+    font-size: 1.7em;
     transition-delay: 200ms;
+    /* color: grey; */
 }
 .aboutSection .basicInfo .about-skillSet{
     padding: 1em;
@@ -513,6 +518,8 @@ hr{
     content: "";
     height: 200px;
     width: 200px;
+    max-height: 20vw;
+    max-width: 20vw;
     border-radius: 50%;
     /* top: 50px; */
     top: 0;
@@ -527,6 +534,8 @@ hr{
     content: "";
     height: 200px;
     width: 200px;
+    max-height: 20vw;
+    max-width: 20vw;
     border-radius: 50%;
     bottom: -50px;
     right: 20%;
@@ -588,16 +597,12 @@ hr{
     
 }
 
-@media screen and (max-width: 1050px){
-     /* .project .projectInfo, .project .projectInfo .projectName{
-        width: 100%;
-        font-size: 100%;
-    } */
-}
-
 @media screen and (max-width: 440px){
     .main .devInfo .devName{
         font-size: 4.5em;
+    }
+    .projectsSection .projectName{
+        font-size: 80%;
     }
     .aboutSection .infoBox{
         min-width: 95%;

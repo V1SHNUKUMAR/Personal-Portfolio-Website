@@ -81,7 +81,7 @@
     /* border: 10px solid rgba(255, 255, 255, 0.466); */
 }
 .main .devInfo .hi{
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .main .devInfo .devName{
     font-size: 3em;
@@ -265,8 +265,40 @@
     width: 100%;
     transform: translateZ(20px)
 }
+
+/* experience */
+.experience{
+    background-color: rgba(255, 255, 255, 0.5);
+    /* padding: 1em; */
+    /* border: 2px solid red; */
+}
+.experience-content{
+    /* border: 2px solid rebeccapurple; */
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/* .experience-content img{
+    border: 2px solid green;
+} */
+.experience-content .experience-info{
+    width: 40em;
+}
+.experience-info .desc{
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+.experience-info .desc span{
+    font-size: 1em;
+    font-weight: 600;
+    margin: .1em;
+}
+
 /* hobbies and interests */
-/* .hobbies{} */
 .hobbies .content-box{
     /* border: 2px solid green; */
     display: flex;
@@ -484,6 +516,9 @@
         height: 12em;
         width: 12em;
     }
+    .experience-content .experience-info{
+        width: 80%;
+    }
     .hobbies .content-box .hobbiesPics img{
         height: 32em;
     }
@@ -503,6 +538,9 @@
   }
 
   @media screen and (max-width: 500px){
+    .heading h1{
+        font-size: 3em;
+    }
     .education ul{
         margin: 1em;
     }
@@ -514,12 +552,30 @@
         max-height: fit-content;
     }
     .course .courseInfo{
+        text-align: start;
+    }
+    .course .courseInfo{
         min-width: 90vw;
+    }
+    .course .courseInfo .years{
+        font-size: 2em;
+    }
+    .course .courseInfo .institution{
+        font-size: 1.8em;
+        color: grey;
+        margin: .5em 0;
     }
     .technical-skills .skillBox .skill{
         height: 10em;
         width: 10em;
     }
+    .experience-content .experience-pic{
+        display: grid;
+        place-items: center;
+    }
+    .experience-content img{
+        width: 70%;
+     }
     .technical-skills .skillBox, .hobbies .content-box .hobbiesBox{
         gap: 1em;
     }
@@ -531,6 +587,9 @@
   }
 
   @media screen and (max-width: 350px){
+    .heading h1{
+        font-size: 2.5em;
+    }
     .technical-skills .skillBox, .technical-skills .skillBox, .hobbies .content-box .hobbiesBox{
         grid-template-columns: repeat(2, 1fr);
         gap: 2em;

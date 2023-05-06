@@ -28,7 +28,7 @@
           <li><a href="/"> Home</a></li>
           <li><a href="/projects.html">Projects</a></li>
           <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/contact.html" class="active">Contact</a></li>
           <li>
             <a href="/resources/cv/VISHNU KUMAR RESUME.pdf" target="_blank"
               ><div class="buttons"><button>Download CV</button></div></a
@@ -112,7 +112,7 @@
         <!-- contact form starts -->
         <section class="contact-form hidden">
           <div class="form-heading"><center>Contact Form</center></div>
-          <form action="#">
+          <form action="https://formspree.io/f/xwkjyyea" method="POST">
             <div class="input name">
               <label for="name">Name</label>
               <!-- <i class="fa fa-user icon"></i> -->
@@ -122,6 +122,7 @@
                 id="name"
                 placeholder="Full Name"
                 required
+                autocomplete="off"
               />
             </div>
             <div class="input email">
@@ -133,6 +134,7 @@
                 id="email"
                 placeholder="abc@example.com"
                 required
+                autocomplete="off"
               />
             </div>
             <div class="input message">
@@ -143,6 +145,8 @@
                 rows="5"
                 placeholder="Write your message here..."
                 required
+                autocomplete="off"
+                minlength="5"
               ></textarea>
             </div>
             <div class="buttons">
@@ -265,7 +269,7 @@
             </div>
           </div>
         </div>
-        <div class="bottomLine">&#169; All Rights Reserved | 2023</div>
+        <div class="bottomLine">&#169; Copyright, All Rights Reserved</div>
       </footer>
       <!-- footer end -->
     </div>

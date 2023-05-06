@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap');
-/* Contact form styling */
 
+/* Contact form styling */
+*{
+    font-family: 'Open Sans', sans-serif;
+}
 .contact-form{
     padding: 1em 3em;
     /* max-height: 100vh; */
@@ -43,7 +46,7 @@ form input, textarea{
     padding: .6em .5em;
     width: 100%;
     /* font-family: 'Ubuntu', sans-serif; */
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     font-size: 1.6em;
     border-radius: 12px;
     border: 1px solid rgba(128, 128, 128, 0.479);

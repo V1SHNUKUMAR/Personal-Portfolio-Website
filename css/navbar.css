@@ -4,8 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
+
 *{
     font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
 }
 .fixedHeader{
     width: 100%;
@@ -221,14 +223,11 @@
     opacity: 0;
 }
 .fullscreenMenu .closeMenu{
-    right: 20px ;
-    top: 20px;
     font-size: 3em;
     color: white;
     position: absolute;
-    right: 45px ;
-    top: 18px;
-    
+    right: 20px;
+    top: 10px;
 }
 .fullscreenMenu nav ul{
     /* height: 90vh; */
@@ -244,6 +243,9 @@
     color: white;
     text-decoration: none;
     font-size: 2.5em;
+}
+.fullscreenMenu nav ul li .active{
+    color: tomato;
 }
 .fullscreenMenu nav ul li a:hover{
     color: tomato;
@@ -262,7 +264,7 @@
 
 @media screen and (max-width: 800px){
     .header{
-        padding: .2em auto;
+        padding: 1em 2em;
     }
     .navbar{
     display: none;
