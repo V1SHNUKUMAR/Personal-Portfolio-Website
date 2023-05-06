@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+/* Contact form styling */
+
+.contact-form{
+    padding: 1em 3em;
+    /* max-height: 100vh; */
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    border: 1px solid  white;
+    border-top: 5px solid rgb(0, 140, 255);
+    backdrop-filter: blur(20px);
+}
+.contact-form center{
+    padding: .3em;
+    font-size: 3em;
+    font-weight: 500;
+    /* transform: translateY(-50px); */
+}
+.contact-form form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+form label{
+    font-size: 2em;
+    margin-left: .2em;
+}
+form .input{
+    margin: .5em 0;
+    width: 100%;
+    /* display: block; */
+}
+form input, textarea{
+    display: block;
+    margin: .2em 0 ;
+    padding: .6em .5em;
+    width: 100%;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6em;
+    border-radius: 12px;
+    border: 1px solid rgba(128, 128, 128, 0.479);
+    /* box-shadow: 0 2px black; */
+    transition: .2s ease-in-out;
+}
+form input:focus, textarea:focus{
+    /* outline: 1px solid rgb(0, 140, 255); */
+    outline: none;
+    transform: translateY(-5px);
+    transform: scale(120%);
+}
+
+form .buttons{
+    width: 100%;
+}
+form button{
+    width: 100%;
+    margin: 1em 0;
+}
+form hr{
+    height: 1px;
+    color: grey;
+    width: 100%;
+    margin: .5em auto;
+}
+form p{
+    margin: .5em;
+    font-size: 1.2em;
+}
+
+/* Contact form styling */

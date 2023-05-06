@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+.footer{
+    min-height: 50vh;
+    background-color: #1c232b;
+    /* background-color: #1c232bd8; */
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 1em;
+}
+/* Quick links */
+.quick-links{
+    width: 33.33%;
+}
+.footer h1{
+    font-size: 3em;
+    margin: .5em 0;
+    color: white;
+    text-align: center;
+}
+.quick-links ul{
+    list-style: none;
+}
+.quick-links ul li{
+    margin: 1em auto;
+    text-align: center;
+}
+.quick-links ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.74);
+
+    font-size: 1.5em;
+}
+/* .quick-links ul li a:hover{
+    color: tomato;
+} */
+/* logo and links */
+.logo-links{
+    width: 33.33%;
+}
+.logo-links .logo{
+    margin: 2em;
+    text-align: center;
+}
+.logo-links .logo h1{
+    font-size: 1.5em;
+}
+.logo-links .socialLinks{
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+}
+/* Contact */
+.contact {
+    width: 33.33%;
+}
+.contact .contact-types{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact a{
+    margin: 1em auto;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.74);
+    transition: .2s;
+}
+.footer a:hover{
+    color: white;
+}
+.footer .bottomLine{
+    color: rgba(255, 255, 255, 0.74);
+    text-align: center;
+    font-size: 1.3em;
+}
+
+/* responsiveness */
+@media screen and (max-width: 800px){
+    footer .content >*{
+        width: 100%;
+    }
+}
