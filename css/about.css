@@ -268,9 +268,21 @@
 
 /* experience */
 .experience{
-    background-color: rgba(255, 255, 255, 0.5);
     /* padding: 1em; */
     /* border: 2px solid red; */
+    color: white;
+    position: relative;
+}
+.experience::before{
+    background: rgba(255, 255, 255, 0.5) url('/resources/images/coding5.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: brightness(.25);
+    z-index: -1;
 }
 .experience-content{
     /* border: 2px solid rebeccapurple; */
@@ -288,7 +300,7 @@
     width: 40em;
 }
 .experience-info .desc{
-    text-align: center;
+    text-align: start;
     font-size: 1.8em;
     margin-bottom: 1em;
 }

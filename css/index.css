@@ -317,6 +317,7 @@ hr{
     align-items: center;
     flex-direction: column;
     position: relative;
+    color: white;
 }
 .aboutSection .about-heading{
     font-size: 4em;
@@ -342,8 +343,8 @@ hr{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap ;
-    background-color: white;
-    box-shadow: 10px 10px tomato;
+    background-color: transparent;
+    /* box-shadow: 10px 10px tomato; */
 }
 .aboutSection .basicInfo{
     /* border: 2px solid red; */
@@ -357,12 +358,13 @@ hr{
 .aboutSection .basicInfo .about-pic{
     height: 15em;
     width: 15em;
-    padding: 3px;
+    /* padding: 3px; */
     margin: 1em 0;
     border-radius: 50%;
     /* border: 3px solid skyblue; */
     /* background: linear-gradient(to right, red, purple); */
     background: linear-gradient(to left, #743ad5, #d53a9d);
+    box-shadow: 0 0 20px white;
     transition-delay: 200ms;
 }
 .aboutSection .basicInfo .about-pic .innerPicBox{
@@ -419,6 +421,8 @@ hr{
     font-size: 1.2em;
     font-weight: 500;
     transition-delay: 200ms;
+    color: black;
+    font-weight: 600;
  }
 /* .aboutSection hr{
     width: 2px;
@@ -465,8 +469,8 @@ hr{
 }
 .aboutSection .officialInfo ul li::before{
     position: absolute;
-    top: -0.15em;
-    left: -.56em;
+    top: -0.25em;
+    left: -.54em;
     content: "•";
     color: tomato;
     font-size: 3em;
@@ -479,7 +483,8 @@ hr{
     /* background-color: rgba(0, 0, 0, 0.048); */
     /* background-color: rgba(112, 128, 144, 0.096); */
     /* border-left: 5px solid slategrey; */
-    background-color: rgba(255, 99, 71, 0.1);
+    /* background-color: rgba(255, 99, 71, 0.1); */
+    background: linear-gradient(to right, rgba(255, 99, 71, 0.5), transparent);
     border-left:5px solid tomato;
 }
 .officialInfo .education .course{
@@ -487,7 +492,8 @@ hr{
     font-size: 2em;         
 }
 .officialInfo .education .course .courseName{
-    color: black;
+    color: white;
+    /* color: black; */
     font-size: 1em;
     /* margin: 1em 0; */
 }
@@ -498,6 +504,9 @@ hr{
 .officialInfo .education .course .institutionName{
     font-size: .8em;
     color: grey;
+}
+.officialInfo .buttons button{
+    background-color: tomato;
 }
 .aboutSection .section-heading{
     margin: 0;
