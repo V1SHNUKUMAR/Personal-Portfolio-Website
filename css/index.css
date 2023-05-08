@@ -536,7 +536,7 @@ hr{
     z-index: -2;
     position: absolute;
     background-color: rgb(0, 183, 255);
-    box-shadow: 0px 0px 10px 100px rgb(0, 183, 255);
+    box-shadow: 0px 0px 10px 80px rgb(0, 183, 255);
     animation: bounce-up 5s ease-in-out infinite;
 }
 .contact-section::after{
@@ -546,12 +546,12 @@ hr{
     max-height: 20vw;
     max-width: 20vw;
     border-radius: 50%;
-    bottom: -50px;
+    bottom: 0px;
     right: 20%;
     z-index: -1;
     position: absolute;
     background-color: tomato;
-    box-shadow: 0px 0px 10px 100px tomato;
+    box-shadow: 0px 0px 10px 80px tomato;
     animation: bounce-down 5s ease-in-out infinite;
 }
 

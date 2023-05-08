@@ -268,7 +268,7 @@
 
 /* experience */
 .experience{
-    /* padding: 1em; */
+    padding: .5em 0;
     /* border: 2px solid red; */
     color: white;
     position: relative;
@@ -286,7 +286,7 @@
 }
 .experience-content{
     /* border: 2px solid rebeccapurple; */
-    margin: 1em auto;
+    margin: 0em auto;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
@@ -298,9 +298,12 @@
 } */
 .experience-content .experience-info{
     width: 40em;
+    text-align: start;
+}
+.experience .heading hr{
+    background-color: white;
 }
 .experience-info .desc{
-    text-align: start;
     font-size: 1.8em;
     margin-bottom: 1em;
 }
@@ -529,7 +532,8 @@
         width: 12em;
     }
     .experience-content .experience-info{
-        width: 80%;
+        width: 90%;
+        text-align: center;
     }
     .hobbies .content-box .hobbiesPics img{
         height: 32em;
