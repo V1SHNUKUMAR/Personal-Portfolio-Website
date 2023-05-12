@@ -220,7 +220,6 @@
     transform: translateX(100%);
     backdrop-filter: blur(10px);
     opacity: 0;
-    border-radius: 50%;
     transition: all .3s;
 }
 .fullscreenMenu .closeMenu{
@@ -260,7 +259,6 @@
     /* display: flex; */
     transform: translateX(0);
     opacity: 1;
-    border-radius: 0%;
 }
 
 /* responsiveness */
