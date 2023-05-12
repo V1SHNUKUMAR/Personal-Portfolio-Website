@@ -216,11 +216,12 @@
     justify-content: center;
     z-index: 100;
     background-color: rgba(0, 0, 0, 0.5);
-    transition: all  .3s;
     /* display: none; */
     transform: translateX(100%);
     backdrop-filter: blur(10px);
     opacity: 0;
+    border-radius: 50rem;
+    transition: all .3s;
 }
 .fullscreenMenu .closeMenu{
     font-size: 3em;
@@ -228,6 +229,7 @@
     position: absolute;
     right: 20px;
     top: 10px;
+    cursor: pointer;
 }
 .fullscreenMenu nav ul{
     /* height: 90vh; */
@@ -258,6 +260,7 @@
     /* display: flex; */
     transform: translateX(0);
     opacity: 1;
+    border-radius: 0%;
 }
 
 /* responsiveness */
