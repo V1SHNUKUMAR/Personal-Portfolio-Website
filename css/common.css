@@ -20,7 +20,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 background-attachment: fixed;
 background-size: cover; */
 /*  */
-    background-color: #f1f4f9;
+    /* background-color: #f1f4f9; */
+    background-color: rgb(246, 247, 255);
 }
 .buttons button::before{
     content: "";
@@ -132,27 +133,28 @@ background-size: cover; */
 /* Custom Scrollbar */
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
-    
+    width: 9px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #ffffff;
+    /* background: #ffffff; */
+    background-color: transparent;
     /* background: linear-gradient(to bottom, #fc5c7c3a, #6a82fb3f); */
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    /* border-radius: 50px; */
+    border-radius: 50px;
     /* background: #888; */
     background: linear-gradient(to bottom, #fc5c7d, #6a82fb);
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
+      /* background: #555; */
+      background: linear-gradient(to bottom, #fc5c7cc2, #6a82fbc7);
+    }
 
   /* Animate on scroll */
   .hidden{
