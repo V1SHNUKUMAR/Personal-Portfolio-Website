@@ -207,7 +207,7 @@
 
 /* Technical skills */
 .technical-skills{
-    padding: 2em;   
+    padding: 2em;
 }
 .technical-skills .skillBox{
     /* display: flex;
@@ -223,6 +223,8 @@
     place-items: center;
     align-content: center;
     /* min-height: 50vh; */
+    
+    
 }
 .technical-skills .skillBox .skill{
     position: relative;
@@ -240,6 +242,10 @@
     transform-style: preserve-3d;
     transform: perspective(1000px);
     transition: .3s ease;
+}
+.technical-skills .skillBox .skill:last-child{
+    left: 104.5%;
+    /* transform: translateX(-100%); */
 }
 /* .technical-skills .skillBox .skill::after{
     content: "";
@@ -482,6 +488,10 @@
         height: 12em;
         width: 12em;
     }
+    .technical-skills .skillBox .skill:last-child{
+        left: 108%;
+        /* transform: translateX(-100%); */
+    }
     .experience-content .experience-info{
         width: 90%;
         text-align: center;
@@ -564,6 +574,9 @@
     .technical-skills .skillBox .skill{
         height: 9em;
         width: 9em;
+    }
+    .technical-skills .skillBox .skill:last-child{
+        left: 57%;
     }
     .hobbies .content-box .hobbiesBox .hobby{
         height: 10em;
