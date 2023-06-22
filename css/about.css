@@ -177,8 +177,8 @@
     /* border: 2px solid blue; */
     max-height: 50vh;
     max-width: 40vw;
-    border-radius: 2em;
-    box-shadow: 3px 3px 9px grey;
+    border-radius: 1em;
+    box-shadow: 0px 20px 20px rgba(128, 128, 128, 0.534);
 }
 .course .courseInfo{
     margin: 1em 0;
