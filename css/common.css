@@ -159,16 +159,14 @@ background-size: cover; */
   /* Animate on scroll */
   .hidden{
     opacity: 0;
-    filter: blur(2.5px);
-    /* transform: translateX(-5%); */
-    transform: translateY(10%);
-    transition: all .7s;
+    /* filter: blur(2.5px); */
+    transform: translateY(50%);
+    transition: .7s;
   }
   .show{
     opacity: 1;
-    filter: blur(0px);
-    /* transform: translateX(0); */
-    transform: translateY(0);
+    /* filter: blur(0px); */
+    transform: translateY(0) ;
   }
   
   @media(prefers-reduced-motion){
