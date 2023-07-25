@@ -314,14 +314,14 @@
     font-size: 1.5rem;
 }
 .experience-info .role{
-    font-weight: bolder;
-    font-size: 3rem;
+    /* font-weight: bolder; */
+    font-size: 2.5rem;
     margin: .5rem 0;
 }
 .experience-info .company{
     font-weight: 600;
     color: skyblue;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .experience-info .desc{
