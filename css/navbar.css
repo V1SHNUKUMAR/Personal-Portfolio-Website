@@ -100,7 +100,8 @@
     color: tomato;
     filter: blur(0px);
     text-shadow: 0px 0px 10px tomato;
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    transform: translateY(-10px);
 
     /* color: red; */
     /* color: rgb(8, 144, 255); */
