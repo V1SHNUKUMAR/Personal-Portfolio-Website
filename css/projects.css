@@ -14,6 +14,7 @@ body{
 }
 .project{
     width: 90vw;
+    max-width: 1400px;
     /* border: 2px solid red; */
     border-radius: 2em;
     margin: 1em auto;
@@ -78,7 +79,7 @@ body{
     display: flex;   
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap-reverse;
+    /* flex-wrap: wrap-reverse; */
     align-content: center;
     position: relative;
 }
@@ -116,27 +117,26 @@ body{
     box-shadow: 0px 0px 5px 40px rgba(161, 255, 68, 0.5);
 }
 /* .project:nth-child(5) .project-cover::after{} */
-.container .project:nth-child(1) .project-cover{
+.container .project:nth-child(1n) .project-cover{
     background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
 
 }
-.container .project:nth-child(2) .project-cover{
+.container .project:nth-child(2n) .project-cover{
     background: #e1eec3;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f05053, #e1eec3);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ffa2a3, #e1eec3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.container .project:nth-child(3) .project-cover{
+.container .project:nth-child(3n) .project-cover{
     background: #108dc7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffdcbe, #76d3ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffdcbe, #76d3ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to left, #ffcece, #76d3ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ffcece, #76d3ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.container .project:nth-child(4) .project-cover{
+.container .project:nth-child(4n) .project-cover{
     background: #1c92d2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: -webkit-linear-gradient(to right, #fef2f2, #1cd22b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fef2f2, #1caed2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.container .project:nth-child(5) .project-cover{
+.container .project:nth-child(5n) .project-cover{
     background: #22c1c3;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #fdbb2d, #22c1c3);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #ffe9b9, #22c1c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -197,7 +197,8 @@ body{
     /* height: 100%; */
     /* max-width: 100vh; */
     /* max-height: 100%; */
-    max-width: 45vw;
+    max-width: 60rem;
+    max-height: 50rem;
     /* min-width: 100%; */
     filter: drop-shadow(0 0 10em white);
     margin: 1em 0;
@@ -255,14 +256,27 @@ body{
     /* display: block; */
     width: 100%;
   }
-  .swiper-slide #fit-to-height{
-    height: 30em;
-    width: auto;
-    /* width: 25em;
-    height: auto; */
+
+/* web dev projects images */
+  .mySwiperForWeb .swiper-slide img{
+    width: 70%;
+  }
+  /* .swiper-slide #fit-to-height{
+    max-height: 30em;
+  } */
+
+.goToProjectButton button{
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    /* float: right; */
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: rgb(8, 144, 255);
+    font-weight: bold;
+
   }
 
   /* responsiveness */
+
   @media screen and (max-width: 1260px){
     .project .project-cover .project-info .projectName{
         font-size: 4em;
@@ -270,21 +284,27 @@ body{
   }
 
   @media screen and (max-width: 1005px){
+    .project .project-cover{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 5rem;
+    }
     .project .project-cover .project-info .projectName{
         font-size: 3.5em;
         /* color: red; */
     }
     .project .project-cover .project-info{
         /* display: block; */
-        width: 100vw;
+        width: 100%;
         text-align: center;
         margin-inline: auto;
+        font-weight: 500;
     }
     .divider{
         margin-inline: auto;
     }
     .project .project-cover .project-pic img{
-        max-width: 60vw;
+        max-width: 70vw;
     }
     .project .project-cover .fit-img-to-height{
         height: auto;
@@ -295,7 +315,7 @@ body{
 
   @media screen and (max-width: 500px){
     .project .project-cover .project-pic img{
-        max-width: 100%;
+        width: 100%;
     }
     .project .project-cover .fit-img-to-height{
         height: auto;
@@ -304,4 +324,8 @@ body{
     .project .project-cover .project-info .projectName{
         font-size: 3em;
     }
+    /* web dev projects img */
+    .mySwiperForWeb .swiper-slide img{
+        width: 95%;
+      }
   }
