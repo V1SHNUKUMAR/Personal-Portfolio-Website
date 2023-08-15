@@ -24,9 +24,7 @@
 }
 .main::before{
     content: "";
-    background: url("/resources/images/coding5.jpg") no-repeat;
-    background: url("/resources/images/au-f1.jpg") no-repeat;
-    background-size: cover;
+    background: url("/resources/images/coding5.jpg") no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
