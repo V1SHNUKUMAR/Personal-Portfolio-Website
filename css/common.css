@@ -25,6 +25,22 @@ background-size: cover; */
     /* background-color: white; */
     background-color: rgb(248, 248, 255);
 }
+
+/* custom cursor */
+#customCursor{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999;
+    mix-blend-mode: difference;
+    top: 5px;
+    transform: scale(1);
+    transition:all ease  .3s;
+    pointer-events: none;
+}
+
 .buttons button::before{
     content: "";
     position: absolute;
