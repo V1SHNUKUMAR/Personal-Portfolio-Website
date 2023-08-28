@@ -15,6 +15,7 @@
     position: fixed;
     z-index: 50;
     color: grey;
+    /* color: rgba(0, 0, 0, 0.5); */
     transition: all .5s;
 }
 .header{
@@ -137,6 +138,7 @@
     color: grey;
     cursor: pointer;
     display: none;
+    mix-blend-mode: difference;
 }
 
 
