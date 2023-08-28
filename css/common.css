@@ -37,7 +37,7 @@ background-size: cover; */
     mix-blend-mode: difference;
     top: 5px;
     transform: scale(1);
-    transition:all ease  .3s;
+    transition:all ease .2s;
     pointer-events: none;
 }
 
