@@ -30,7 +30,7 @@ background-size: cover; */
 #customCursor{
     height: 10px;
     width: 10px;
-    background-color: white;
+    background-color: aliceblue;
     border-radius: 50%;
     position: fixed;
     z-index: 999;
