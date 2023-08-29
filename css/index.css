@@ -1,5 +1,7 @@
 @import url("/css/common.css");
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+/* Rubik */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* .container{
     width: 100vw;
@@ -7,9 +9,9 @@
 /* body{
     overflow-x: hidden;
 } */
-*{
+/* *{
     font-family: 'Open Sans', sans-serif;
-}
+} */
 .main{
     /* background-color: #e7eaee ; */
     min-height: 100vh;
@@ -41,8 +43,8 @@
     left: 10%;
     z-index: -2;
     position: absolute;
-    background-color: rgba(0, 183, 255, 0.3);
-    box-shadow: 0px 0px 100px 100px rgb(0, 183, 255, 0.3);
+    background-color: rgba(0, 183, 255, 0.4);
+    box-shadow: 0px 0px 100px 100px rgb(0, 183, 255, 0.4);
     /* background-color: rgba(0, 153, 255, 0.3);
     box-shadow: 0px 0px 100px 100px rgb(0, 153, 255, 0.3); */
     /* animation: bounce-up 5s ease-in-out infinite; */
@@ -61,8 +63,8 @@
     position: absolute;
     /* background-color: rgba(255, 0, 0, 0.2);
     box-shadow: 0px 0px 100px 100px rgba(255, 0, 0, 0.2); */
-    background-color: rgba(255, 0, 0, 0.2);
-    box-shadow: 0px 0px 100px 100px rgba(255, 0, 0, 0.2);
+    background-color: rgba(255, 0, 0, 0.3);
+    box-shadow: 0px 0px 100px 100px rgba(255, 0, 0, 0.3);
     /* animation: bounce-down 5s ease-in-out infinite; */
 }
 /* typed cursor */
@@ -72,6 +74,7 @@
     background-repeat: no-repeat;
     color: black;
     background-color: black;
+    border: 1px solid black;
     font-family: 'Times New Roman', Times, serif;
 }
 /* .main .devInfo{ */
@@ -92,9 +95,10 @@
 }
 .main .devInfo .devName span{
     font-size: 1em;
-    font-weight: bold;
+    /* font-weight: 500; */
     /* text gradient */
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    /* background: linear-gradient(to left, rgb(0, 140, 255) 0%, rgb(255, 53, 93) 100%); */
     background-clip: text;
     background-size: 100%;
     background-repeat: repeat;
@@ -102,7 +106,9 @@
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    /*  */
+    /* font-family: 'Inter', sans-serif; */
+    /* font-family: 'Rubik', sans-serif; */
+
 }
 .main .devInfo .devRole{
     font-size: 3em;
@@ -213,7 +219,7 @@
     animation: bounce-down 5s ease-in-out infinite;
 }
 .section-heading{
-    font-size: 4em;
+    font-size: 5em;
     text-align: center;
     margin: .5em 0;
 }
@@ -223,6 +229,7 @@ hr{
     margin: 0 auto;
     background-color: black;
 }
+
 .projectsSection .project{
     /* border: 2px solid orange; */
     /* min-height: 100vh; */
@@ -235,6 +242,7 @@ hr{
     gap: 5rem;
     /* border: 2px solid yellow; */
 }
+
 .projectsSection .flex-wrap-forward{
     flex-wrap: wrap;
 }
@@ -278,7 +286,7 @@ hr{
     max-width: 40rem;
     font-size: 1.5rem;
     text-align: center;
-    font-weight: 400;
+    /* font-weight: 400; */
 }
 .project .projectInfo .buttons button{
     margin: 1em 0;
@@ -393,7 +401,7 @@ hr{
     /* margin: .5em 0; */
     /* line-height: 1; */
     font-size: 2.5em;
-    font-weight: 600;
+    font-weight: bold;
     transition-delay: 200ms;
 
 }
@@ -430,10 +438,9 @@ hr{
     background-color: bisque;
     border-radius: 12px;
     font-size: 1.2em;
-    font-weight: 500;
     transition-delay: 200ms;
     color: black;
-    font-weight: 600;
+    font-weight: bolder;
  }
 /* .aboutSection hr{
     width: 2px;

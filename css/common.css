@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap');
-
+/* Phudu */
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;600;700;800;900&display=swap');
+/* Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Lato condensed */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/* DM Sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
 
 /*  */
 *{
@@ -10,7 +21,13 @@
     font-size: 10px;
     z-index: 0;
     scroll-behavior: smooth;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Phudu', cursive; */
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Inter', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    font-family: 'DM Sans', sans-serif;
 }
 body{
     /* font-family: 'Ubuntu', sans-serif; */
@@ -38,7 +55,7 @@ background-size: cover; */
     mix-blend-mode: difference;
     top: 5px;
     transform: scale(1);
-    transition: .2s;
+    transition: .1s;
     pointer-events: none;
 }
 
@@ -181,11 +198,12 @@ background-size: cover; */
     /* filter: blur(2.5px); */
     transform: translateY(10%);
     transition: 1s;
+    transition-delay: .1s;
   }
   .show{
     opacity: 1;
     /* filter: blur(0px); */
-    transform: translateY(0) ;
+    transform: translateY(0);
   }
   
   @media(prefers-reduced-motion){

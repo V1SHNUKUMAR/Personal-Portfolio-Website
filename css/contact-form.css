@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 /* Contact form styling */
-*{
+/* *{
     font-family: 'Open Sans', sans-serif;
-}
+} */
 .contact-form{
     padding: 1em 3em;
     /* max-height: 100vh; */
