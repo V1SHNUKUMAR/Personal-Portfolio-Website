@@ -14,7 +14,8 @@ const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((element) => observer.observe(element));
 
 // custom cursor
-const container = document.getElementsByClassName("container")[0];
+// const container = document.getElementsByClassName("container")[0];
+const container = document.body;
 const customCursor = document.getElementById("customCursor");
 const enlargeCursor = document.querySelectorAll(".enlargeCursor");
 
