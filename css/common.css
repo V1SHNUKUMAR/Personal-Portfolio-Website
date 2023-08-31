@@ -169,7 +169,7 @@ background-size: cover; */
 /* Custom Scrollbar */
 /* width */
 ::-webkit-scrollbar {
-    width: 9px;
+    width: 8px;
   }
   
   /* Track */
@@ -222,3 +222,67 @@ background-size: cover; */
         display: none;
     }
   }
+
+  /* Achievements section*/
+
+.achievementsSection{
+    min-height: 100vh;
+    max-width: 1400px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.achievementsSection .info{
+    flex: 1;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 10rem 3rem;
+}
+.achievementsSection .info p{
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.achievementsSection .certificates{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.achievementsSection .certificates img{
+    max-width: 350px;
+    transform: rotate(-2deg) translateX(-70px);
+    margin: 3rem 0;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.25);
+}
+
+.achievementsSection .certificates img:nth-child(2n){
+    transform: rotate(2deg) translateX(70px);
+}
+
+@media screen and (max-width: 1100px) {
+    .achievementsSection{
+        flex-direction: column;
+        align-items: center;
+    }
+    .achievementsSection .info{
+        /* position: relative; */
+        text-align: center;
+    }
+    .achievementsSection .certificates img{
+        max-width: 50vw;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .achievementsSection .certificates img{
+        max-width: 60vw;
+    }
+}

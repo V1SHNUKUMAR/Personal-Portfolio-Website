@@ -20,9 +20,14 @@ const customCursor = document.getElementById("customCursor");
 const enlargeCursor = document.querySelectorAll(".enlargeCursor");
 
 container.addEventListener("mousemove", (dets) => {
-  // console.log(dets);
-  customCursor.style.left = dets.x - 5 + "px";
-  customCursor.style.top = dets.y - 5 + "px";
+  // console.log(dets.y);
+  if (dets.x === 0 || dets.y === 0) {
+    customCursor.style.opacity = "0";
+  } else {
+    customCursor.style.opacity = "1";
+    customCursor.style.left = dets.x - 5 + "px";
+    customCursor.style.top = dets.y - 5 + "px";
+  }
 });
 
 enlargeCursor.forEach((el) => {
