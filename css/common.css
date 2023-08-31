@@ -55,7 +55,7 @@ background-size: cover; */
     mix-blend-mode: difference;
     top: 5px;
     transform: scale(1);
-    transition: .1s;
+    transition: .15s;
     pointer-events: none;
 }
 
@@ -198,7 +198,7 @@ background-size: cover; */
     /* filter: blur(2.5px); */
     transform: translateY(10%);
     transition: 1s;
-    transition-delay: .1s;
+    transition-delay: .2s;
   }
   .show{
     opacity: 1;
@@ -265,6 +265,27 @@ background-size: cover; */
 
 .achievementsSection .certificates img:nth-child(2n){
     transform: rotate(2deg) translateX(70px);
+}
+
+/* DSA Section */
+
+.DSASection{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.DSASection h5{
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.DSASection h5 span{
+    color: tomato;
+    font-size: 5rem;
 }
 
 @media screen and (max-width: 1100px) {
