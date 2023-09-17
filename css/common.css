@@ -342,4 +342,7 @@ background-size: cover; */
     .achievementsSection .certificates img{
         max-width: 60vw;
     }
+    #starter h1{
+        font-size: 3rem;
+    }
 }
