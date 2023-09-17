@@ -12,6 +12,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 /* DM Sans */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+/* Pacifico */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* Marck Script */
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 
 /*  */
 *{
@@ -29,6 +33,37 @@
     /* font-family: 'Roboto Condensed', sans-serif; */
     font-family: 'DM Sans', sans-serif;
 }
+
+#starter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    /* top: 0; */
+    left: 0;
+    z-index: 999;
+    animation: starterAnim 2s ease-out forwards 1s;
+}
+
+#starter h1{
+    font-size: 5rem;
+    /* text-transform: uppercase; */
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Marck Script', cursive;
+}
+
+@keyframes starterAnim {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-200vh);
+    }
+}
+
 body{
     /* font-family: 'Ubuntu', sans-serif; */
 
@@ -46,16 +81,17 @@ background-size: cover; */
 
 /* custom cursor */
 #customCursor{
+    display: none;
     height: 12px;
     width: 12px;
-    background-color: aliceblue;
+    background-color: white;
     border-radius: 50%;
     position: fixed;
     z-index: 999;
     mix-blend-mode: difference;
     top: 5px;
     transform: scale(1);
-    transition: .15s;
+    /* transition: .15s; */
     pointer-events: none;
 }
 
@@ -198,7 +234,7 @@ background-size: cover; */
     /* filter: blur(2.5px); */
     transform: translateY(10%);
     transition: 1s;
-    transition-delay: .2s;
+    transition-delay: .3s;
   }
   .show{
     opacity: 1;

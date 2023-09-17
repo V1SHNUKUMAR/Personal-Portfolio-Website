@@ -97,6 +97,7 @@
     font-size: 1em;
     /* font-weight: 500; */
     /* text gradient */
+    font-weight: bold;
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     /* background: linear-gradient(to left, rgb(0, 140, 255) 0%, rgb(255, 53, 93) 100%); */
     background-clip: text;
@@ -117,7 +118,7 @@
 .main .devInfo .devAbout{
     font-size: 1.5em;
     /* margin: 10px 0; */
-    max-width: 40em; 
+    max-width: 52rem;
     /* border: 2px solid; */
 }
 .main .devInfo .buttons button{

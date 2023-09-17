@@ -20,21 +20,55 @@ const customCursor = document.getElementById("customCursor");
 const enlargeCursor = document.querySelectorAll(".enlargeCursor");
 
 container.addEventListener("mousemove", (dets) => {
-  // console.log(dets.y);
-  if (dets.x === 0 || dets.y === 0) {
-    customCursor.style.opacity = "0";
+  // console.log(dets);
+  // console.log(window.innerHeight);
+  customCursor.style.display = "block";
+  if (
+    dets.clientX < 1 ||
+    dets.clientY < 5 ||
+    dets.clientX > window.innerWidth - 20 ||
+    dets.clientY > window.innerHeight - 20
+  ) {
+    gsap.to(customCursor, {
+      opacity: 0,
+    });
+    // customCursor.style.opacity = "0";
   } else {
-    customCursor.style.opacity = "1";
-    customCursor.style.left = dets.x - 5 + "px";
-    customCursor.style.top = dets.y - 5 + "px";
+    gsap.to("#customCursor", {
+      left: dets.x - 5 + "px",
+      top: dets.y - 5 + "px",
+      opacity: "1",
+      ease: "power3",
+    });
+    // customCursor.style.opacity = "1";
+    // customCursor.style.left = dets.x - 5 + "px";
+    // customCursor.style.top = dets.y - 5 + "px";
   }
 });
 
 enlargeCursor.forEach((el) => {
   el.addEventListener("mouseenter", () => {
-    customCursor.style.transform = "scale(20)";
+    gsap.to("#customCursor", {
+      transform: "scale(15)",
+    });
+    // customCursor.style.transform = "scale(20)";
   });
   el.addEventListener("mouseleave", () => {
-    customCursor.style.transform = "scale(1)";
+    gsap.to("#customCursor", {
+      transform: "scale(1)",
+    });
+    // customCursor.style.transform = "scale(1)";
   });
+});
+
+gsap.from("#starter", {
+  top: "0",
+  opacity: "1",
+  ease: "power1.out",
+});
+
+gsap.to("#starter", {
+  top: "-100vh",
+  opacity: "0",
+  ease: "power1",
 });
