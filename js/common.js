@@ -60,15 +60,3 @@ enlargeCursor.forEach((el) => {
     // customCursor.style.transform = "scale(1)";
   });
 });
-
-gsap.from("#starter", {
-  top: "0",
-  opacity: "1",
-  ease: "power1.out",
-});
-
-gsap.to("#starter", {
-  top: "-100vh",
-  opacity: "0",
-  ease: "power1",
-});
