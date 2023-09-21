@@ -150,7 +150,7 @@
     list-style: none;
     margin: 2em;
     /* padding: 2em; */
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255,1);
     border: 1px solid white;
     border-radius: 2em;
 }
@@ -232,11 +232,11 @@
 .technical-skills .skillBox .skill{
     position: relative;
     overflow: hidden;
-    height: 15em;
-    width: 15em;
+    height: 10em;
+    width: 10em;
     padding: 1em;
     border-radius: 1em;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, 1);
     /* background-color: #0017337a; */
     /* background-color: rgba(0, 0, 0, 0.1); */
     border: 1px solid white;
