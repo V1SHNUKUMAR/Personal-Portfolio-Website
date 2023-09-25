@@ -49,7 +49,7 @@ container.addEventListener("mousemove", (dets) => {
 enlargeCursor.forEach((el) => {
   el.addEventListener("mouseenter", () => {
     gsap.to("#customCursor", {
-      transform: "scale(15)",
+      transform: "scale(20)",
     });
     // customCursor.style.transform = "scale(20)";
   });
