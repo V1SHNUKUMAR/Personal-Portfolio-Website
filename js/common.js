@@ -51,6 +51,8 @@ enlargeCursor.forEach((el) => {
     gsap.to("#customCursor", {
       transform: "scale(20)",
     });
+
+    customCursor.style.boxShadow = "0 0 1px white";
     // customCursor.style.transform = "scale(20)";
   });
   el.addEventListener("mouseleave", () => {
