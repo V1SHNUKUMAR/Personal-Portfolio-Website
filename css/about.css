@@ -24,7 +24,7 @@
 }
 .main::before{
     content: "";
-    background: url("/resources/images/coding5.jpg") no-repeat center center/cover;
+    background: url("https://media.istockphoto.com/id/537331500/photo/programming-code-abstract-technology-background-of-software-deve.jpg?b=1&s=612x612&w=0&k=20&c=B1O_UHuhlV34GJnQxQgxGDqmtBKMJkMf_FGssI1WEVE=") no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -87,13 +87,15 @@
     font-size: 1.5em;
 }
 .main .devInfo .devName{
-    font-size: 3em;
+    font-size: 4rem;
     line-height: 1;
     margin: .5em 0;
+    font-weight: lighter;
+    word-spacing: 1rem;
 }
 .main .devInfo .devName span{
-    font-size: 1.5em;
-    font-weight: 700;
+    font-size: 4rem;
+    font-weight: bold;
     /* text gradient */
     /* background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     background-clip: text;
@@ -115,7 +117,8 @@
     margin: 0 auto;
     padding: 0 2em;
     font-size: 1.5em;
-    max-width: 40em;
+    max-width: 500px;
+    font-weight: 300;
 }
 
 /* Education */
@@ -286,7 +289,7 @@
     position: relative;
 }
 .experience::before{
-    background: rgba(255, 255, 255, 0.5) url('/resources/images/coding5.jpg') no-repeat center center/cover;
+    background: rgba(255, 255, 255, 0.5) url('https://cutewallpaper.org/28/coding-is-an-art-wallpaper/315616782.jpg') no-repeat center center/cover;
     content: "";
     position: absolute;
     top: 0;
@@ -313,7 +316,7 @@
     border: 2px solid green;
 } */
 .experience-content .experience-info{
-    max-width: 60rem;
+    max-width: 500px;
     text-align: start;
 }
 .experience-info .time{
