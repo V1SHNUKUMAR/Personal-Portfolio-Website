@@ -49,15 +49,18 @@ container.addEventListener("mousemove", (dets) => {
 enlargeCursor.forEach((el) => {
   el.addEventListener("mouseenter", () => {
     gsap.to("#customCursor", {
-      transform: "scale(20)",
+      transform: "scale(10)",
+      backgroundColor: "rgba(0, 0, 0, 0.15)",
+      // opacity: "0",
     });
 
-    customCursor.style.boxShadow = "0 0 1px white";
+    customCursor.style.boxShadow = "0 0 0 .08px rgba(0, 0, 0, 0.5)";
     // customCursor.style.transform = "scale(20)";
   });
   el.addEventListener("mouseleave", () => {
     gsap.to("#customCursor", {
       transform: "scale(1)",
+      backgroundColor: "black",
     });
     // customCursor.style.transform = "scale(1)";
   });
