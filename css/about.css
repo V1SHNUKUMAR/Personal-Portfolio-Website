@@ -24,7 +24,7 @@
 }
 .main::before {
   content: "";
-  background: url("https://media.istockphoto.com/id/537331500/photo/programming-code-abstract-technology-background-of-software-deve.jpg?b=1&s=612x612&w=0&k=20&c=B1O_UHuhlV34GJnQxQgxGDqmtBKMJkMf_FGssI1WEVE=")
+  background: url("https://www.bhmpics.com/downloads/hd-background-images-for-laptop-Wallpapers/16.279547.jpg")
     no-repeat center center/cover;
   position: absolute;
   top: 0;
@@ -85,6 +85,7 @@
   object-fit: cover;
   object-position: center;
   /* border: 10px solid rgba(255, 255, 255, 0.466); */
+  /* filter: brightness(1.1); */
 }
 .main .devInfo .hi {
   font-size: 1.5em;
@@ -197,10 +198,11 @@
   text-align: center;
 }
 .course .courseInfo .years {
-  font-size: 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
   border: 1px solid black;
   border-radius: 50px;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   /* width: min-content; */
   display: inline-block;
   margin-inline: auto;
@@ -324,6 +326,7 @@
 .experience-content .experience-pic img {
   max-height: 500px;
   /* opacity: 0.75; */
+  filter: brightness(1.1);
 }
 .experience-content hr {
   margin: 3rem auto;

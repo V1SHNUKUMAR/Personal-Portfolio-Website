@@ -413,6 +413,7 @@ hr {
 .aboutSection .basicInfo .about-pic img {
   height: 100%;
   border-radius: 50%;
+  filter: brightness(1.1);
 }
 .aboutSection .basicInfo .about-name {
   /* margin: .5em 0; */
