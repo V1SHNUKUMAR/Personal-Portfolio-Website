@@ -49,6 +49,7 @@
   /* background-color: rgba(0, 153, 255, 0.3);
     box-shadow: 0px 0px 100px 100px rgb(0, 153, 255, 0.3); */
   /* animation: bounce-up 5s ease-in-out infinite; */
+  animation: scaleUp 1s ease-in-out 1;
 }
 .main::after {
   content: "";
@@ -66,7 +67,18 @@
   background-color: rgba(255, 0, 0, 0.3);
   box-shadow: 0px 0px 100px 100px rgba(255, 0, 0, 0.3);
   /* animation: bounce-down 5s ease-in-out infinite; */
+  animation: scaleUp 1s ease-in-out 1;
 }
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* typed cursor */
 .typed-cursor {
   /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
@@ -530,7 +542,6 @@ hr {
   color: white;
   /* color: black; */
   font-size: 1em;
-  /* margin: 1em 0; */
 }
 .officialInfo .education .course span {
   font-size: 1em;
