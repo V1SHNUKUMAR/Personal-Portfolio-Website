@@ -258,6 +258,7 @@
   /* transform: perspective(1000px); */
   transition: 0.3s ease;
 }
+
 /* .technical-skills .skillBox .skill:last-child{
     left: 104.5%;
 } */
@@ -286,6 +287,39 @@
   object-fit: contain;
   object-position: center;
   transform: translateZ(20px);
+  z-index: 4;
+  position: relative;
+  transition: .3s ease-in-out;
+}
+
+.technical-skills .skillBox .skill .skillName {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  transform: translateY(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s ease-in-out;
+  transition-delay: .1s;
+}
+
+.technical-skills .skillBox .skill .skillName p{
+  font-size: 1.5rem;
+  font-weight: 400;
+  transition: .3s ease-in-out forward;
+}
+
+.technical-skills .skillBox .skill:hover .skillName {
+  transform: translateY(25%);
+  background-color: white;
+}
+
+.technical-skills .skillBox .skill:hover img {
+  transform: translateY(-25%) scale(.75);
 }
 
 /* experience */
@@ -325,6 +359,8 @@
 .experience-content .experience-pic {
   position: sticky;
   top: 0;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .experience-content .experience-pic img {
@@ -599,6 +635,15 @@
   .technical-skills .skillBox {
     grid-template-columns: repeat(3, 100px);
     gap: 5rem;
+  }
+
+  .experience .company-logo {
+    height: 33px;
+    width: 40px;
+  }
+  
+  .experience .zysk-logo {
+    height: 60px;
   }
 }
 

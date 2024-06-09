@@ -308,6 +308,7 @@ hr {
   padding: 0.5em;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .project .projectInfo .projectDesc {
   margin: 0 0 1em 0;
@@ -352,8 +353,8 @@ hr {
 
 /* About section */
 .aboutSection {
-  margin-top: 2em;
-  padding: 2em 0;
+  margin-top: 2rem;
+  padding: 2rem 0;
   min-height: 100vh;
   width: 100%;
   /* border: 2px solid green; */
@@ -381,7 +382,7 @@ hr {
 
 .aboutSection .infoBox {
   /* border: 2px solid red; */
-  padding: 1em;
+  padding: 1rem;
   border-radius: 1.5em;
   min-height: 80%;
   min-width: 80%;
@@ -407,7 +408,7 @@ hr {
   height: 15em;
   width: 15em;
   /* padding: 3px; */
-  margin: 1em 0;
+  margin: 1rem 0;
   border-radius: 50%;
   /* border: 3px solid skyblue; */
   /* background: linear-gradient(to right, red, purple); */
@@ -476,10 +477,12 @@ hr {
     height: 50%;
 } */
 .aboutSection .officialInfo {
-  max-width: 50%;
+  /* max-width: 50%; */
   /* border: 2px solid blue; */
-  margin: 1em;
-  padding: 1em;
+  margin: 1rem;
+  margin-inline: 0;
+  padding: 1rem;
+  padding-inline: 0;
   display: flex;
   justify-content: center;
   /* align-items: center; */
@@ -514,7 +517,7 @@ hr {
   position: relative;
   transition-delay: 200ms;
 }
-.aboutSection .officialInfo ul li::before {
+.aboutSection .officialInfo > ul li::before {
   position: absolute;
   top: -0.25em;
   left: -0.54em;
@@ -522,10 +525,11 @@ hr {
   color: tomato;
   font-size: 3em;
 }
-.aboutSection .officialInfo .education h2 {
-  font-size: 3em;
-  margin: 0.5em 0;
-  padding: 0 0.3em;
+.aboutSection .officialInfo .education > h2 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  padding: .5rem 1rem;
+  font-weight: normal;
   /* color: tomato; */
   /* background-color: rgba(0, 0, 0, 0.048); */
   /* background-color: rgba(112, 128, 144, 0.096); */
@@ -557,6 +561,76 @@ hr {
 .aboutSection .section-heading {
   margin: 0;
   padding: 0;
+}
+
+/* experience section */
+.aboutSection .experience{
+  width: 500px;
+  max-width: 90vw;
+}
+
+.aboutSection .experience > ul{
+  margin: 5rem 0;
+}
+
+.aboutSection .experience > ul li{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.aboutSection .experience > ul li > div{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.aboutSection .experience > ul li > div h2{
+  font-weight: normal;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.aboutSection .experience > ul li > div h3{
+  font-weight: normal;
+  color: skyblue;
+  font-size: 1.5rem;
+}
+
+.aboutSection .experience > ul li:first-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.aboutSection .experience > ul li:first-child .time {
+  margin-top: 1.5rem;
+}
+
+.aboutSection .experience > ul li:last-child .time {
+  margin-top: 0.5rem;
+}
+
+.experience .time {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.experience .company-logo {
+  height: 50px;
+  width: 50px;
+  aspect-ratio: 1;
+}
+
+.experience .zysk-logo {
+  height: 75px;
+}
+
+.experience .company-logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
 }
 
 /* Contact section */
@@ -657,6 +731,16 @@ hr {
     text-align: center;
     align-items: center;
   }
+
+  .experience .company-logo {
+  height: 33px;
+  width: 40px;
+}
+
+.experience .zysk-logo {
+  height: 60px;
+}
+
 }
 
 @media screen and (max-width: 440px) {
@@ -669,4 +753,8 @@ hr {
   .aboutSection .infoBox {
     min-width: 95%;
   }
+
+  .experience .zysk-logo {
+  height: 70px;
+}
 }
