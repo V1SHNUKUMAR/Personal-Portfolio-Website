@@ -24,7 +24,7 @@
 }
 .main::before {
   content: "";
-  background: url("https://www.bhmpics.com/downloads/hd-background-images-for-laptop-Wallpapers/16.279547.jpg")
+  background: url("https://media.istockphoto.com/id/500954400/photo/computer-coffee-mug-telephone-on-black-wood-table-sun-rising.jpg?s=612x612&w=0&k=20&c=AWZgqePKVZQ30tKTRtZQlrWSd1ycwGpVtr1tRbDmn8o=")
     no-repeat center center/cover;
   position: absolute;
   top: 0;
@@ -289,7 +289,7 @@
   transform: translateZ(20px);
   z-index: 4;
   position: relative;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .technical-skills .skillBox .skill .skillName {
@@ -303,14 +303,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: .3s ease-in-out;
-  transition-delay: .1s;
+  transition: 0.3s ease-in-out;
+  transition-delay: 0.1s;
 }
 
-.technical-skills .skillBox .skill .skillName p{
+.technical-skills .skillBox .skill .skillName p {
   font-size: 1.5rem;
   font-weight: 400;
-  transition: .3s ease-in-out forward;
+  transition: 0.3s ease-in-out forward;
 }
 
 .technical-skills .skillBox .skill:hover .skillName {
@@ -319,7 +319,7 @@
 }
 
 .technical-skills .skillBox .skill:hover img {
-  transform: translateY(-25%) scale(.75);
+  transform: translateY(-25%) scale(0.75);
 }
 
 /* experience */
@@ -349,7 +349,8 @@
 .experience-content {
   /* border: 2px solid rebeccapurple; */
   margin: 0em 1rem;
-  margin-bottom: 4rem;
+  margin-top: 10rem;
+  margin-bottom: 8rem;
   display: flex;
   justify-content: space-evenly;
   align-content: center;
@@ -364,7 +365,7 @@
 }
 
 .experience-content .experience-pic img {
-  max-height: 500px;
+  max-height: 400px;
   /* opacity: 0.75; */
   filter: brightness(1.1);
 }
@@ -518,7 +519,7 @@
 /* } */
 .hobbies .content-box .hobbiesPics img {
   margin: 2em;
-  height: 40em;
+  height: 45em;
   filter: drop-shadow(5px 10px 10px #66666679);
 }
 /* Family section */
@@ -641,7 +642,7 @@
     height: 33px;
     width: 40px;
   }
-  
+
   .experience .zysk-logo {
     height: 60px;
   }
