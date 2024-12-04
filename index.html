@@ -31,8 +31,17 @@
   </head>
 
   <body>
+    <!-- loader -->
+    <div id="starter">
+      <div class="centerDiv">
+        <p>&lt;</p>
+        <h1>Welcome</h1>
+        <p>/></p>
+      </div>
+    </div>
+
     <!-- Hamburger menu -->
-    <div class="fullscreenMenu">
+    <div id="fullscreenMenu" class="fullscreenMenu">
       <div class="closeMenu">
         <!-- <i class="fa fa-times"></i> -->
         &#10006;
@@ -101,7 +110,7 @@
       </nav>
     </div>
     <!-- navbar -->
-    <header class="fixedHeader">
+    <header id="fixedHeader" class="fixedHeader">
       <div class="header">
         <div class="logo">
           <h1><a href="/">V1SHNU</a></h1>
@@ -130,9 +139,6 @@
       </div>
     </header>
 
-    <div id="starter">
-      <h1>W e l c o m e</h1>
-    </div>
     <!-- navbar ends -->
     <div id="container" class="container">
       <!-- custom cursor -->
@@ -626,6 +632,37 @@
       </footer>
       <!-- footer ends -->
     </div>
+
+    <!-- javascript -->
+    <script>
+      const preloader = document.getElementById("starter");
+      const content = document.getElementById("container");
+      const fullscreenMenu = document.getElementById("fullscreenMenu");
+      const fixedHeader = document.getElementById("fixedHeader");
+      // content.style.visibility = "hidden";
+      // fullscreenMenu.style.visibility = "hidden";
+      // fixedHeader.style.visibility = "hidden";
+
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          // Hide preloader
+          const preloader = document.getElementById("preloader");
+          preloader.style.opacity = "0"; // Smooth fade-out effect
+
+          setTimeout(() => {
+            preloader.style.display = "none"; // Remove from view
+            // content.style.visibility = "visible";
+            // fullscreenMenu.style.visibility = "visible";
+            // fixedHeader.style.visibility = "visible";
+          }, 500); // Allow fade-out to complete (matching transition duration in CSS)
+
+          // Show main content
+          // const content = document.getElementById("content");
+          // content.style.visibility = "visible";
+        }, 3000);
+      });
+    </script>
+
     <!-- js files -->
     <script src="js/navbar.js"></script>
     <script src="js/common.js"></script>

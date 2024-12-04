@@ -40,7 +40,8 @@
   align-items: center;
   height: calc(100vh + 7vh);
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.15);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background: linear-gradient(to top, #0206177b, #94a3b887);
   backdrop-filter: blur(30px);
   position: fixed;
   top: 0;
@@ -48,33 +49,65 @@
   z-index: 999;
   transform: translateY(-10%);
   /* letter-spacing: 5px; */
-  animation: starterAnim 2s ease-in-out forwards;
+  animation: starterAnim 3s ease-in-out forwards;
+}
+
+#starter .centerDiv {
+  font-size: 4rem;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+#starter .centerDiv p {
+  font-size: 4rem;
+  color: white;
 }
 
 #starter h1 {
   font-size: 4rem;
   /* text-transform: uppercase; */
-  font-family: "Pacifico", cursive;
+  /* font-family: "Pacifico", cursive; */
+  color: white;
   /* font-family: "Marck Script", cursive; */
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: openTextAnim 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes openTextAnim {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 225px;
+  }
 }
 
 @keyframes starterAnim {
   0% {
-    transform: translateY(-7vh);
+    transform: translateY(-5vh);
   }
-  75% {
+  20% {
     transform: translateY(0);
     /* backdrop-filter: blur(10px); */
   }
-  85% {
+  53% {
+    /* Extend the 50% state to simulate a pause */
+    transform: translateY(0);
+    /* backdrop-filter: blur(10px); */
+  }
+  80% {
     transform: translateY(0);
     opacity: 1;
   }
   100% {
     transform: translateY(-100%);
     /* backdrop-filter: blur(0); */
-    /* letter-spacing: 50px; */
-
+    letter-spacing: 8px;
     opacity: 0;
   }
 }
