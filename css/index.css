@@ -190,6 +190,8 @@
   /* transform: rotate(-3deg); */
   /* transform: rotate3d(3, 1, 1, -52deg); */
   border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
   border: 10px solid rgba(255, 255, 255, 0.473);
 }
 @keyframes morph {
@@ -528,7 +530,7 @@ hr {
 .aboutSection .officialInfo .education > h2 {
   font-size: 2.5rem;
   margin: 1rem 0;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   font-weight: normal;
   /* color: tomato; */
   /* background-color: rgba(0, 0, 0, 0.048); */
@@ -564,16 +566,16 @@ hr {
 }
 
 /* experience section */
-.aboutSection .experience{
+.aboutSection .experience {
   width: 500px;
   max-width: 90vw;
 }
 
-.aboutSection .experience > ul{
+.aboutSection .experience > ul {
   margin: 5rem 0;
 }
 
-.aboutSection .experience > ul li{
+.aboutSection .experience > ul li {
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -581,28 +583,28 @@ hr {
   padding: 2rem 0;
 }
 
-.aboutSection .experience > ul li > div{
+.aboutSection .experience > ul li > div {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-.aboutSection .experience > ul li > div h2{
+.aboutSection .experience > ul li > div h2 {
   font-weight: normal;
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
-.aboutSection .experience > ul li > div h3{
+.aboutSection .experience > ul li > div h3 {
   font-weight: normal;
   color: skyblue;
   font-size: 1.5rem;
 }
 
-.aboutSection .experience > ul li:first-child {
+.aboutSection .experience > ul li:not(:last-child) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.aboutSection .experience > ul li:first-child .time {
+.aboutSection .experience > ul .zysk-company-det .time {
   margin-top: 1.5rem;
 }
 
@@ -733,14 +735,13 @@ hr {
   }
 
   .experience .company-logo {
-  height: 33px;
-  width: 40px;
-}
+    height: 33px;
+    width: 40px;
+  }
 
-.experience .zysk-logo {
-  height: 60px;
-}
-
+  .experience .zysk-logo {
+    height: 60px;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -755,6 +756,6 @@ hr {
   }
 
   .experience .zysk-logo {
-  height: 70px;
-}
+    height: 70px;
+  }
 }
