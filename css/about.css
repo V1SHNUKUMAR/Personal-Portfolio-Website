@@ -235,8 +235,8 @@
   max-width: 1200px;
   margin: 7rem auto;
   display: grid;
-  gap: 10rem;
-  grid-template-columns: repeat(4, 90px);
+  gap: 5rem;
+  grid-template-columns: repeat(6, 90px);
   /* grid-auto-rows: minmax(10em, auto); */
   /* place-items: center; */
   /* align-content: center; */
